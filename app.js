@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 	//__dirname : It will resolve to your project folder.
 });
 
-app.get('/qldMap', function (req, res) {
+app.get('/ABS_data_MB_2011_QLD.html', function (req, res) {
 	res.sendFile(path.join(__dirname+PUBLIC+'/ABS_data_MB_2011_QLD.html'));
 	//__dirname : It will resolve to your project folder.
 });
