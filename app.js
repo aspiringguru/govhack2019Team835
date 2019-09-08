@@ -12,6 +12,11 @@ app.get('/', function (req, res) {
 	//__dirname : It will resolve to your project folder.
 });
 
+app.get('/qldMap', function (req, res) {
+	res.sendFile(path.join(__dirname+PUBLIC+'/ABS_data_MB_2011_QLD.html'));
+	//__dirname : It will resolve to your project folder.
+});
+
 
 //add the router
 app.use('/', router);
@@ -19,4 +24,3 @@ app.use('/', router);
 app.listen(PORT, "0.0.0.0", function () {
   console.log('govhack2019.peerbanking.com.au listening on port '+PORT);
 });
-
