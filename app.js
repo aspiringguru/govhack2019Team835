@@ -17,6 +17,11 @@ app.get('/qldMap', function (req, res) {
 	//__dirname : It will resolve to your project folder.
 });
 
+app.get('/favicon.ico', function (req, res) {
+	res.sendFile(path.join(__dirname+PUBLIC+'/favicon.ico'));
+	//__dirname : It will resolve to your project folder.
+});
+
 
 //add the router
 app.use('/', router);
