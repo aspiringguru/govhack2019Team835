@@ -22,6 +22,10 @@ app.get('/favicon.ico', function (req, res) {
 	//__dirname : It will resolve to your project folder.
 });
 
+app.get('/MB_2011_QLD_exported.js', function (req, res) {
+	res.sendFile(path.join(__dirname+PUBLIC+'/MB_2011_QLD_exported.js'));
+	//__dirname : It will resolve to your project folder.
+});
 
 //add the router
 app.use('/', router);
